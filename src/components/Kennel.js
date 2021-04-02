@@ -1,9 +1,10 @@
-import React from "react"
-import { AnimalCard } from "./animal/AnimalCard"
-import { CustomerCard } from "./customer/CustomerCard"
-import { EmployeeCard } from "./employee/EmployeeCard"
-import { LocationCard } from "./location/LocationCard"
+import React from "react";
+import { AnimalCard } from "./animal/AnimalCard";
+import { CustomerCard } from "./customer/CustomerCard";
+import { EmployeeCard } from "./employee/EmployeeCard";
+import { LocationCard } from "./location/LocationCard";
 import "./Kennel.css"
+import { PropsAndState } from "./PropsAndState";
 
 export const Kennel = () => (
   <>
@@ -15,6 +16,7 @@ export const Kennel = () => (
       <div>500 Puppy Way</div>
     </address>
 
+    <PropsAndState yourName="Brenda" />
     <h2>Animals</h2>
     <article className="animals">
       <AnimalCard />
