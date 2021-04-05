@@ -1,17 +1,30 @@
 {
   "animals": [
-      { "id": 1, "name": "Doodles", "breed": "Poodle"},
-      { "id": 2, "name": "Decker", "breed": "German Shepherd" },
-      { "id": 3, "name": "Esme", "breed": "Pitbull" }
+      { "id": 1, "name": "Doodles", "breed": "Poodle", "employeeId": 1},
+      { "id": 2, "name": "Decker", "breed": "German Shepherd", "employeeId": 5},
+      { "id": 3, "name": "Esme", "breed": "Pitbull", "employeeId": 3}
   ],
   "customers": [
       {
           "id": 1,
           "name": "Hannah Hall",
-          "address": "7002 Chestnut Ct"
+          "address": "in the sky",
+          "locationId": 1
+      },
+      {
+          "id": 2,
+          "name": "Collette Almond",
+          "address": "at the center of the earth",
+          "locationId": 2
       }
   ],
-  "employees": [],
+  "employees": [
+    {"id": 1, "name": "Greta Traynor"},
+    {"id": 2, "name": "Baran Day"},
+    {"id": 3, "name": "Andrew Miles"},
+    {"id": 4, "name": "Carl Andrews"},
+    {"id": 5, "name": "Dimitri Stanton"}
+  ],
   "locations": [
       {
           "id": 1,
