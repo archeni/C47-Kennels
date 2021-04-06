@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 //import the components we will need
 import { CustomerCard } from './CustomerCard';
-import { getAllCustomers, getCustomerById } from '../../modules/CustomerManager';
+import { getAllCustomers, getCustomerById, deleteCustomer } from '../../modules/CustomerManager';
 
 export const CustomerList = () => {
   // The initial state is an empty array
@@ -15,6 +15,11 @@ export const CustomerList = () => {
     });
   };
 
+  const handleDeleteCustomer = id => {
+    deleteCustomer(id)
+    .then(() => getAllCustomers().then(setCustomers));
+  };
+
   // got the animals from the API on the component's first render
   useEffect(() => {
     getCustomers();
@@ -24,7 +29,9 @@ export const CustomerList = () => {
   return (
     <div className="container-cards">
       {customers.map(customer => 
-      <CustomerCard key={customer.id} customer={customer}/>)}
+      <CustomerCard key={customer.id} 
+        customer={customer} 
+        handleDeleteCustomer={handleDeleteCustomer}/>)}
     </div>
   );
 };
