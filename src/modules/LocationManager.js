@@ -16,3 +16,13 @@ const remoteURL = "http://localhost:5002"
       method: "DELETE"
     }).then(result => result.json())
   }
+
+  export const addLocation = (newLocation) => {
+    return fetch(`${remoteURL}/locations`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newLocation)
+    }).then(response => response.json())
+  }
