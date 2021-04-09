@@ -21,14 +21,12 @@
     {
       "id": 1,
       "name": "Hannah Hall",
-      "address": "in the sky",
-      "locationId": 1
+      "address": "in the sky"
     },
     {
       "id": 2,
       "name": "Collette Almond",
-      "address": "at the center of the earth",
-      "locationId": 2
+      "address": "at the center of the earth"
     }
   ],
   "employees": [
